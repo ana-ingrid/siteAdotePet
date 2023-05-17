@@ -1,0 +1,490 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho*/
+.imgCabecalho {
+    width: 100%;
+    position: relative;
+}
+
+.cabecalho {
+    position: relative;
+}
+
+.cabecalho h1 {
+    display: inline;
+}
+
+.divicaoAncoras {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100px;
+    top: 0;
+}
+
+.ancoras {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 120px;
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+}
+
+.ancoras li {
+    display: inline;
+    color: aliceblue;
+    padding: 40px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#titulo {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    list-style: none;
+    padding: 30px;
+    color: aliceblue;
+    font-size: 50px;    
+    font-weight: 550;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Texto em cima da imagem principal*/
+#textoNaImagem {
+    position: absolute;
+    top: 280px;
+    left: 80px;
+    margin: 25px;
+    padding: 0px;
+    color: aliceblue;
+    font-size: 24px;    
+    width: 280px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 27px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* botão de doação e de adoção*/
+.divBotoes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px 150px 0px;
+    position: relative;
+    background: #FFFFFF;
+}
+
+.botao {
+  width: 500px;
+  height: 100px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.tituloBotao {
+    font-weight: 500;
+    padding-bottom: 6px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.textoBotao {
+    font-size: 13px;
+    color: #f5eded;
+    font-family: 'Roboto', sans-serif;
+}
+
+#botaoDoacao {
+    background: #BD1F1F;
+}
+
+#botaoAdocao {
+    background: #30342B;
+}
+
+/* Faixa rosa com texto*/
+.faixaRosa {
+    background: #D471AD;
+    height: 120px;
+    width: 100%;
+    position: relative;
+}
+
+.faixaRosa p {
+    text-align: center;
+    font-size: 46px;
+    color: #FFFFFF;
+    padding: 36px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Caixa de texto azul*/
+.div {
+    display: flex;
+    padding-bottom: 100px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.caixaAzul {
+    position: relative;
+    background: #3573AE;
+    width: 700px;
+    height: 330px;
+} 
+
+#tituloCaixa {
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 40px 20px 0px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textoCaixa {
+    color: #A7C0CF;
+    font-size: 19px;
+    line-height: 1.2    ;
+    padding: 40px 15px 30px 15px;
+    text-align: center;
+    text-indent: 25px;
+    width: 650px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#botaoCaixa {
+    position: absolute;
+    right: 270px;
+    color: #FFFFFF;
+    background: #30342B;
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Imagens do lado da caixa de texto azul*/
+.imgGatos {
+    width: 800px;
+    height: 330px;
+    position: relative;
+}
+
+
+/* Sessão de doação */
+#doacoes {
+    background: #ece0e0;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.textosETitulos {
+    padding: 50px 80px 50px 100px;
+    position: absolute;
+    right: 150px;
+}
+
+/* Titulo das H2 das sessoes da página principal */
+.tituloSessoes {
+    font-size: 28px;
+    font-weight: 800;
+    padding: 20px;
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#subtituloDoacoes {
+    font-size: 46px;
+    color: #BD1F1F;
+    font-weight: 600;
+    padding: 0px 20px 30px 20px;
+}
+
+.textoDoacoes {
+    width: 900px;
+    font-size: 23px;
+    padding: 20px 20px 50px 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ParagrafosDoacoes {
+    line-height: 1.5;
+    padding: 20px 0px;
+}
+
+
+#textoCentralizado {
+    text-align: center;
+}
+
+.botaoDoacao {
+    background-color: #BD1F1F;
+    color: #FFFFFF;
+    border-radius: 40px;
+    font-size: 20px;
+    width: 350px;
+    height: 60px;
+    margin: 0px 50px 0px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    cursor: pointer;
+}
+
+
+/* Quem somos */
+#quemSomos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 100px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.textosQs {
+    color: #A0A0A0;
+    width: 500px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.imagemQs {
+    border-radius: 200px;
+    height: 420px;
+    width: 600px;
+    margin: 0px 30px;
+}
+
+#subtituloQs {
+    color: #27668A;
+    font-size: 56px;
+    font-weight: 600;
+    margin: 0 0 0 15px;
+}
+
+.textosQs p {
+    padding: 20px;
+    width: 550px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.textoCentralizado {
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    height: 370px;
+    background: #bae0ab;
+    width: 100%;
+    position: relative; 
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    
+}
+
+/* Caixa verde do rodapé */
+.caixaRodape {
+    background: #4FA772;
+    height: 140px;
+    width: 320px;
+    border-radius: 15px;
+    position: relative;
+    margin: 100px;
+    cursor: pointer;
+}
+
+#tituloCaixaRodape {
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: 550;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    padding: 20px 0px 20px 0px;  
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.caixaRodape p {
+    color: #F5F5F5;
+    font-size: 14px;
+    width: 225px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    line-height: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* dividindo os blocos do rodapé em coluna */
+.divisaoRodape {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+
+.titulosRodape {
+    color: #000000;
+    font-size: 21px;
+    font-weight: 550;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subTitulosRodape {
+    color: #BD1F1F;
+    font-size: 18px;
+    /* font-weight: 550; */
+    padding: 15px 0px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.divisaoRodape p {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.redesSociaisRodape a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.imagemRedeSocial {
+    cursor: pointer;
+}
+
+.imagemRodape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.divisaoImagemRodape {
+    background-image: url(imagens/rodape.jpg);
+    height: 40px;
+    position: relative;
+}
+.mensagemRodape {
+    position: absolute;
+    bottom: 10px;
+    right: 600px;
+    color: #ece0e0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Seta para voltar ao topo */
+#seta {
+    position: fixed;
+}
+
+/* Página Adote */
+.divisaoCabecalho {
+    background-image: url(imagens/nav.jpg);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tituloAdote {
+    padding: 30px;
+    color: aliceblue;
+    font-size: 50px;    
+    font-weight: 550;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ancorasAdote {
+    display: flex;
+}
+
+.ancorasAdote li {
+    color: aliceblue;
+    padding: 40px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textoAdote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 280px;
+    align-items: center;
+}
+
+.tituloTextoAdote {
+    font-size: 46px;
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+}
+
+.textoAdote p {
+    font-size: 20px;
+    width: 500px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.divicaoAnimaisAdote {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.divicaoAnimaisAdote img {
+    padding: 0px 20px;
+}
+
+.blocoImagem {
+    position: relative;
+}
+
+.blocoImagem p {
+    position: absolute;
+    top: 230px;
+    right: 200px;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 550;
+}

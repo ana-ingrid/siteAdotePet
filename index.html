@@ -8,9 +8,6 @@
     <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
     <title>Adote Pet</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <script src="extensao.js"></script>
     <link rel="stylesheet" href="reset.css">
 </head>
@@ -19,18 +16,24 @@
     <header class="cabecalho" id="cabecalho">
         <img src="imagens/principal.jpg" alt="imagem de um cachorro e um gato" class="imgCabecalho">
             
-       <div class="divicaoAncoras" id="divicaoAncoras">
+       <div class="divisaoAncoras" id="divisaoAncoras">
             <h1 id="titulo">Adote Pet</h1>
             <ul class="ancoras">
                 <li><a href="#quemSomos">Quem Somos</a></li>
                 <li><a href="adote.html">Adote</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
                 <li><a href="#doacoes">Doações</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="divBotoes" id="botoes">
+    <section class="divisaoFaixa">
+        <div class="faixaRosa">
+            <p>Os animais precisam de você</p>
+        </div>
+    </section>
+
+    <div class="divBotoes">
         <a href="adote.html">
         <button class="botao" id="botaoAdocao">
             <p class="tituloBotao">ADOTE UM PELUDO</p>
@@ -46,10 +49,7 @@
         </a>
     </div>
 
-    <div class="faixaRosa">
-        <p>Os animais precisam de você</p>
-    </div>
-    
+
     <div class="div">
     <nav class="caixaAzul">
         <p id="tituloCaixa">Quero adotar, como faço?</p>
@@ -59,7 +59,7 @@
          Para adotar é importante que preencha o nosso formulário de adoção
          com atenção e precisão, todos os dados serão avaliados.
         </p>
-        <button id="botaoCaixa">Formulário</button>
+        <a href="formulario.html"><button id="botaoCaixa">Formulário</button></a>
     </nav>
     <img src="imagens/puloGatos.jpg" alt="gatos em um jardim" class="imgGatos">
     </div>

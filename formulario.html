@@ -5,19 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="extensao.js"></script>
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <form action="POST">
-        <label for="email">Email</label>
-        <input type="email" required>
+    <header>
+        <div class="divisaoCabecalho">
+            <a href="index.html"><h1 class="tituloAdote">Adote Pet</h1></a>
+            <ul class="ancorasAdote">
+                <li><a href="index.html#quemSomos">Quem Somos</a></li>
+                <li><a href="adote.html">Adote</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="#doacoes">Doações</a></li>
+            </ul>
+        </div>
+    </header>
 
-        <label for="senha">Senha</label>
-        <input type="password" required>
+    <section class="divisaoFormulario">
+       <p class="textoFormulario">Olá, ficamos muito contentes pela sua opção em adotar e por escolher um bichinho do Adote Pet.</p>
+       <p class="textoFormulario">Para adotar um dos nossos cães, é preciso ter mais de 21 anos, preencher este questionário,
+         enviar fotos de onde irá morar e, se acertada a adoção, assinar um <strong class="termoFormulario">termo de responsabilidade</strong>,
+          Esse é o processo padrão de adoção responsável.</p>
+       <p class="textoFormulario">Então, por favor, <strong>responda todas as perguntas com cuidado e atenção.</strong> Analisaremos as suas
+         respostas com cuidado e daremos um retorno assim que possível!</p>
+    
+         <form action="POST" class="formulario" enctype="multipart/form-data">
+            <div class="formularioPrimeiraDivisao">
+                <label for="nomeCompleto">Nome completo</label>
+                <input type="text" id="nomeCompleto">
 
-        <input type="submit" value="Enviar">
-    </form>
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
 
-    <p>Ainda não possui cadastro?</p>
-    <a href="cadastro.html">Cadastre-se</a>
+                <label for="nomeAnimal">Animal a ser adotado</label>
+                <input type="text" id="nomeAnimal">
+            </div>
+
+            <div class="formularioSegundaDivisao">
+                <div>
+                <label for="ddd">DDD</label>
+                <label for="telefone">Telefone/Whatsapp</label>
+                <label for="nasc
+                imento">Data de nascimento</label>
+                </div>
+                <div>
+                    <input type="number" id="ddd">
+                    <input type="tel" id="telefone">
+                    <input type="date" id="nascimento">
+                </div>
+            </div>
+
+            <div class="CaixaArquivo">
+                <label for="file" id="labelCaixaArquivo">Envie 2 fotos dos ambientes onde o animal irá viver:</label>
+                <p class="ParagrafoCaixaArquivo">Por favor, envie fotos de no máx. 5mb cada</p>
+                <div class="botaoCaixaArquivo">
+                    <label for="arquivo" class="botaoLabelCaixaArquivo">Escolher arquivo</label>
+                    <input type="file" id="arquivo">
+                </div>
+                <div class="botaoCaixaArquivo">
+                    <input type="file" id="arquivo">
+                    <label for="arquivo" class="botaoLabelCaixaArquivo">Escolher arquivo</label>
+                </div>
+            </div>
+
+            <div class="redesSociaisFormulario">
+                <div class="redesSociaisLabels">
+                    <label for="instagram">Instagram(opcional)</label>
+                    <label for="facebook">Facebook(opcional)</label>
+                </div>
+                <div class="redesSociaisInputs">
+                    <input type="text" id="instagram">
+                    <input type="text" id="facebook">
+                </div>
+            </div>
+
+            <div class="endereco">
+                <label for="endereco" class="labelEndereco">Endereço completo (rua, número, complemento) </label>
+                <input type="text" id="endereco" class="inputEndereco">
+
+                <label for="bairro" class="labelEndereco">Bairro</label >
+                <input type="text" id="bairro" class="inputEndereco">
+                
+                <div class="enderecoCidadeEUf">
+                    <div>
+                        <label for="cidade">Cidade</label>
+                        <label for="uf">UF</label>
+                    </div>
+                    
+                    <div>
+                        <input type="text" id="cidade">
+                        <input type="text" id="uf">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    
+    <footer>
+        <section class="conteiner">
+        <div class="caixaRodape">
+            <h5 id="tituloCaixaRodape">Como podemos ajudar você?</h5>
+            <p>Conheça mais sobre nossa empresa, políticas e tenha o melhor atendimento. </p>
+        </div>
+
+        <div class="divisaoRodape">
+            <h5 class="titulosRodape">Atendimento</h5>
+            <h6 class="subTitulosRodape">Telefone</h6>
+            <p>0800 000 00</p>
+            <h6 class="subTitulosRodape">E-mail</h6>
+            <p>adotepet@gmal.com</p>
+        </div>
+
+        <div class="divisaoRodape">
+            <h5 class="titulosRodape">Onde Estamos</h5>
+            <nav class="redesSociaisRodape">
+                <a href="" class="imagemRedeSocial"><img src="imagens/facebook.png" alt="Logo do Facebook"></a>
+                <a href="" class="imagemRedeSocial"><img src="imagens/instagram.png" alt="Logo do Instagram" imagemRedeSocial></a>
+                <a href="" class="imagemRedeSocial"><img src="imagens/twitter.png" alt="Logo do Twitter"></a>
+            </nav>
+            <h6 class="subTitulosRodape">Endereço</h6>
+            <p>Rio de Janeiro - Catumbi</p>
+        </div>
+        </section>
+        <div class="divisaoImagemRodape">
+            <p class="mensagemRodape">© 2023 Copyrirght - Adote Pet</p>
+        </div>
+    </footer>
 </body>
 </html>

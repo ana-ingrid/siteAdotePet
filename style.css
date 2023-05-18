@@ -11,13 +11,11 @@ html {
 
 .cabecalho {
     position: relative;
+    height: 677px;
 }
 
-.cabecalho h1 {
-    display: inline;
-}
 
-.divicaoAncoras {
+.divisaoAncoras {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -31,7 +29,6 @@ html {
     top: 0;
     right: 120px;
     list-style: none;
-    margin: 5px;
     padding: 0;
 }
 
@@ -49,26 +46,10 @@ html {
     top: 0;
     left: 70px;
     list-style: none;
-    padding: 30px;
+    padding: 20px;
     color: aliceblue;
     font-size: 50px;    
     font-weight: 550;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Texto em cima da imagem principal*/
-#textoNaImagem {
-    position: absolute;
-    top: 280px;
-    left: 80px;
-    margin: 25px;
-    padding: 0px;
-    color: aliceblue;
-    font-size: 24px;    
-    width: 280px;
-    text-align: center;
-    font-weight: 600;
-    line-height: 27px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -76,13 +57,13 @@ html {
 .divBotoes {
     display: flex;
     justify-content: space-evenly;
-    padding: 50px 0px 150px 0px;
+    padding: 50px 0px 100px 0px;
     position: relative;
     background: #FFFFFF;
 }
 
 .botao {
-  width: 500px;
+  width: 370px;
   height: 100px;
   padding: 10px;
   background-color: #4CAF50;
@@ -106,7 +87,7 @@ html {
 }
 
 .textoBotao {
-    font-size: 13px;
+    font-size: 12px;
     color: #f5eded;
     font-family: 'Roboto', sans-serif;
 }
@@ -121,7 +102,7 @@ html {
 
 /* Faixa rosa com texto*/
 .faixaRosa {
-    background: #D471AD;
+    background: #67b3b9;
     height: 120px;
     width: 100%;
     position: relative;
@@ -298,7 +279,7 @@ html {
 
 /* Rodapé */
 footer {
-    height: 370px;
+    height: 380px;
     background: #bae0ab;
     width: 100%;
     position: relative; 
@@ -313,7 +294,7 @@ footer {
 
 /* Caixa verde do rodapé */
 .caixaRodape {
-    background: #4FA772;
+    background: #255024;
     height: 140px;
     width: 320px;
     border-radius: 15px;
@@ -465,14 +446,14 @@ footer {
     font-family: 'Quicksand', sans-serif;
 }
 
-.divicaoAnimaisAdote {
+.divisaoAnimaisAdote {
     display: flex;
     height: 400px;
     justify-content: center;
     padding-bottom: 100px;
 }
 
-.divicaoAnimaisAdote img {
+.divisaoAnimaisAdote img {
     padding: 0px 20px;
 }
 
@@ -487,4 +468,242 @@ footer {
     font-size: 40px;
     color: #FFFFFF;
     font-weight: 550;
+}
+/* Página dos Animais gatos/cachorros */
+.mensagemPrincipal {
+    font-size: 32px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background: #27668A;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.divisaoTituloAnimais {
+    width: 380px;
+    height: 60px;
+    background: #30342B;
+    font-size: 36px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 550;
+    margin: 20px 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.divisaoAnimais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.divisaoAnimais div {
+    padding: 20px;
+}
+
+.divisaoAnimais div img {
+    height: 320px;
+    width: 350px;
+}
+
+.botaoOutrosAnimais {
+    text-align: center;
+    padding: 60px;
+}
+
+.botaoOutrosAnimais a button{
+    color: #FFFFFF;
+    background: #30342B;
+    font-size: 24px;
+    width: 350px;
+    height: 70px;
+    border-radius: 30px;
+    font-weight: 550;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+/* formulário */
+.divisaoFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.textoFormulario {
+    width: 730px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.termoFormulario {
+    color: #4CAF50;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.formularioPrimeiraDivisao {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formularioPrimeiraDivisao label {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px;
+}
+
+.formularioPrimeiraDivisao input {
+    height: 30px;
+    width: 700px;
+}
+
+.formularioSegundaDivisao {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    padding-bottom: 80px;
+}
+
+.formularioSegundaDivisao div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 700px;
+}
+
+.formularioSegundaDivisao div label {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 50px;
+}
+
+.formularioSegundaDivisao div input {
+    margin:0px 30px;
+}
+
+.CaixaArquivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #255024 2px solid;
+    width: 700px;
+    height: 200px;
+    padding: 20px;
+}
+
+#ddd {
+    width: 80px;
+    height: 30px;
+}
+
+#telefone {
+    width: 250px;
+    height: 30px;
+}
+
+#nascimento {
+    width: 250px;
+    height: 30px;
+}
+
+.ParagrafoCaixaArquivo {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    color: #7a7171;
+}
+
+.botaoCaixaArquivo {
+    position: relative;
+    padding: 15px;
+}
+
+#arquivo {
+    position: absolute;
+    left: -9999px;
+}
+
+.botaoLabelCaixaArquivo {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    color: #4CAF50;
+    border: #4CAF50 2px solid;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+#labelCaixaArquivo {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}
+
+labelCaixaArquivo::hover {
+    
+}
+
+.redesSociaisFormulario {
+    margin: 50px 0px;
+}
+
+.redesSociaisFormulario div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 700px; 
+}
+
+.redesSociaisLabels label{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 90px;  
+}
+
+.redesSociaisInputs input {
+    width: 300px;
+    height: 30px;
+    margin: 0px 30px;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.labelEndereco {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px;
+}
+
+.inputEndereco {
+    width: 700px;
+    height: 30px;
+}
+
+.enderecoCidadeEUf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -6,53 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/pata.png" type="image/x-icon">
     <script src="extensao.js"></script>
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <header>
-        <div class="divisaoCabecalho">
-            <a href="index.html"><h1 class="tituloAdote">Adote Pet</h1></a>
-            <ul class="ancorasAdote">
-                <li><a href="index.html#quemSomos">Quem Somos</a></li>
-                <li><a href="adote.html">Adote</a></li>
-                <li><a href="formulario.html">Formulário</a></li>
-                <li><a href="#doacoes">Doações</a></li>
-            </ul>
+    <header class="cabecalho">
+        <div class="divisaoAncoras">
+            <a href="index.html"><h1 id="titulo">Adote Pet</h1></a>
+            <nav class="ancoras" aria-label="navbar">
+                <a href="index.html#quemSomos">Quem Somos</a>
+                <a href="adote.html">Adoção</a>
+                <a href="formulario.html">Formulário</a>
+                <a href="index.html#doacoes">Ajuda</a>
+            </nav>
+            <a href="index.html#doacoes" class="buttonNav" id="buttonNav">DOAÇÕES</a>
         </div>
     </header>
+
+    <div class="faixaPrincipal"></div>
 
     <section class="divisaoFormulario">
        <p class="textoFormulario">Olá, ficamos muito contentes pela sua opção em adotar e por escolher um bichinho do Adote Pet.</p>
        <p class="textoFormulario">Para adotar um dos nossos cães, é preciso ter mais de 21 anos, preencher este questionário,
-         enviar fotos de onde irá morar e, se acertada a adoção, assinar um <strong class="termoFormulario">termo de responsabilidade</strong>,
+         enviar fotos de onde irá morar e, se acertada a adoção, assinar um <strong>termo de responsabilidade</strong>,
           Esse é o processo padrão de adoção responsável.</p>
-       <p class="textoFormulario">Então, por favor, <strong>responda todas as perguntas com cuidado e atenção.</strong> Analisaremos as suas
+       <p class="textoFormulario">Então, por favor, <strong class="strongTexto">responda todas as perguntas com cuidado e atenção.</strong> Analisaremos as suas
          respostas com cuidado e daremos um retorno assim que possível!</p>
     
          <form action="POST" class="formulario" enctype="multipart/form-data">
             <div class="formularioPrimeiraDivisao">
                 <label for="nomeCompleto">Nome completo</label>
-                <input type="text" id="nomeCompleto">
+                <input type="text" id="nomeCompleto" required>
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
 
                 <label for="nomeAnimal">Animal a ser adotado</label>
-                <input type="text" id="nomeAnimal">
+                <input type="text" id="nomeAnimal" required>
             </div>
 
             <div class="formularioSegundaDivisao">
-                <div>
-                <label for="ddd">DDD</label>
-                <label for="telefone">Telefone/Whatsapp</label>
-                <label for="nasc
-                imento">Data de nascimento</label>
+                <div class="divisaoSegundaDivisao">
+                    <label for="ddd">DDD</label>
+                    <label for="telefone">Telefone/Whatsapp</label>
+                    <label for="nascimento">Data de nascimento</label>
                 </div>
-                <div>
-                    <input type="number" id="ddd">
-                    <input type="tel" id="telefone">
-                    <input type="date" id="nascimento">
+                <div class="divisaoSegundaDivisao">
+                    <input type="number" id="ddd" required> 
+                    <input type="tel" id="telefone" required>
+                    <input type="date" id="nascimento" required>
                 </div>
             </div>
 
@@ -60,11 +63,11 @@
                 <label for="file" id="labelCaixaArquivo">Envie 2 fotos dos ambientes onde o animal irá viver:</label>
                 <p class="ParagrafoCaixaArquivo">Por favor, envie fotos de no máx. 5mb cada</p>
                 <div class="botaoCaixaArquivo">
+                    <input type="file" id="arquivo" required>
                     <label for="arquivo" class="botaoLabelCaixaArquivo">Escolher arquivo</label>
-                    <input type="file" id="arquivo">
                 </div>
                 <div class="botaoCaixaArquivo">
-                    <input type="file" id="arquivo">
+                    <input type="file" id="arquivo" required>
                     <label for="arquivo" class="botaoLabelCaixaArquivo">Escolher arquivo</label>
                 </div>
             </div>
@@ -75,31 +78,89 @@
                     <label for="facebook">Facebook(opcional)</label>
                 </div>
                 <div class="redesSociaisInputs">
-                    <input type="text" id="instagram">
-                    <input type="text" id="facebook">
+                    <input type="text" id="instagram" >
+                    <input type="text" id="facebook" >
                 </div>
             </div>
 
             <div class="endereco">
                 <label for="endereco" class="labelEndereco">Endereço completo (rua, número, complemento) </label>
-                <input type="text" id="endereco" class="inputEndereco">
+                <input type="text" id="endereco" class="inputEndereco" required>
 
                 <label for="bairro" class="labelEndereco">Bairro</label >
-                <input type="text" id="bairro" class="inputEndereco">
+                <input type="text" id="bairro" class="inputEndereco" required>
                 
                 <div class="enderecoCidadeEUf">
-                    <div>
+                    <div class="divisaoEnderecoCidadeEUfLabel">
                         <label for="cidade">Cidade</label>
-                        <label for="uf">UF</label>
+                        <label for="uf" id="ufLabel">UF</label>
                     </div>
                     
-                    <div>
-                        <input type="text" id="cidade">
-                        <input type="text" id="uf">
+                    <div class="divisaoEnderecoCidadeEUfInput">
+                        <input type="text" id="cidade" required>
+                        <input type="text" id="uf" required>
                     </div>
                 </div>
             </div>
 
+            <div class="divisaoPerguntas">
+            <label for="pergunta1" class="labelPerguntas">1. Você está adotando um animal para ser:</label>
+            <select name="" id="pergunta1" class="selectFormulario">
+                <option>Companhia</option>
+                <option>Guarda</option>
+                <option>Outro</option>
+            </select>
+            </div>
+
+            <div class="divisaoPerguntas">
+            <label for="pergunta2" class="labelPerguntas">2. Mora em casa ou apartamento:</label>
+            <select name="" id="pergunta2" class="selectFormulario">
+                <option>Casa</option>
+                <option>Apartamento</option>
+                <option>Outro</option>
+            </select>
+            </div>
+
+            <div class="caixaDeTextoFormulario">
+                <label for="caixaDeTexto1" class="labelPerguntas">3. Já há outros animais na casa? Se sim, quais? São castrados e vacinados?</label>
+                <textarea name="" id="caixaDeTexto1" rows="3" required></textarea>
+
+                <label for="caixaDeTexto2" class="labelPerguntas">4. Um cão pode viver 15 anos ou mais. Cuidará bem dele até seu último dia de vida?
+                    Continuará o amando e respeitando quando estiver idoso, com doenças crônicas e/ou deficiência mental/física?</label>
+                <textarea name="" id="caixaDeTexto2" rows="3" required></textarea>
+
+                <label for="caixaDeTexto3" class="labelPerguntas">5. Está disposto a limpar xixi e cocô, levá-lo para passear, dar comida nos horários
+                     certos, tratá-lo quando doente e dar atenção e carinho?</label>
+                <textarea name="" id="caixaDeTexto3" rows="3" required></textarea>
+
+
+                <label for="caixaDeTexto4" class="labelPerguntas">6. Poderá arcar com os custos de ração de qualidade, vermifugação, vacinação, castração
+                     e assistência veterinária? Qual seria sua atitude se ele adoecesse ou sofresse algum acidente?</label>
+                <textarea name="" id="caixaDeTexto4" rows="3" required></textarea>
+
+
+                <label for="caixaDeTexto5" class="labelPerguntas">7. Todos os moradores da casa respeitam animais e aceitaram a adoção sem problemas e
+                     restrições? Qual seria sua atitude se alguém da residência não se adaptasse ao bichinho?</label>
+               <textarea name="" id="caixaDeTexto3" rows="3" required></textarea>
+
+               
+               <label for="caixaDeTexto6" class="labelPerguntas">8. Em média, quantas horas seu animal ficará sozinho em casa? Caso seja necessário
+                 ficar mais de 6h sozinho, está disposto a enriquecer o ambiente com brinquedos, passear antes de sair e ao chegar e/ou contratar uma petsitter?</label>
+                <textarea name="" id="caixaDeTexto3" rows="3" required></textarea>
+
+                
+                <label for="caixaDeTexto7" class="labelPerguntas">9. Concorda em enviar informações e fotos do cãozinho de tempos em tempos espontaneamente
+                     ou quando solicitado?</label>
+               <textarea name="" id="caixaDeTexto3" rows="3" required></textarea>
+
+               <label for="caixaDeTexto7" class="labelPerguntas">10. Em caso de ocorrer algum problema que motive a devolução do animal, se compromete a contatar
+                 o Adote Pet para combinar a mesma, não repassando-o para outra pessoa sem nosso conhecimento?</label>
+              <textarea name="" id="caixaDeTexto3" rows="3" required></textarea>
+            </div>
+            <div class="botoes">
+                <input type="Submit" value="Enviar" class="botaoFormulario">
+                <input type="reset" value="Limpar" class="botaoFormulario" id="reset">
+            </div>
         </form>
     </section>
 
@@ -121,7 +182,7 @@
 
         <div class="divisaoRodape">
             <h5 class="titulosRodape">Onde Estamos</h5>
-            <nav class="redesSociaisRodape">
+            <nav class="redesSociaisRodape" aria-label="redesSociais">
                 <a href="" class="imagemRedeSocial"><img src="imagens/facebook.png" alt="Logo do Facebook"></a>
                 <a href="" class="imagemRedeSocial"><img src="imagens/instagram.png" alt="Logo do Instagram" imagemRedeSocial></a>
                 <a href="" class="imagemRedeSocial"><img src="imagens/twitter.png" alt="Logo do Twitter"></a>

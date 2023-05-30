@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adote Pet</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/pata.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <header>
-        <div class="divisaoCabecalho">
-            <a href="index.html"><h1 class="tituloAdote">Adote Pet</h1></a>
-            <ul class="ancorasAdote">
-                <li><a href="index.html#quemSomos">Quem Somos</a></li>
-                <li><a href="adote.html">Adote</a></li>
-                <li><a href="formulario.html">Formulário</a></li>
-                <li><a href="#doacoes">Doações</a></li>
-            </ul>
+    <header class="cabecalho" id="cabecalho">
+        <div class="divisaoAncoras" id="divisaoAncoras">
+            <a href="index.html"><h1 id="titulo">Adote Pet</h1></a>
+            <nav class="ancoras" aria-label="navbar">
+                <a href="index.html#quemSomos">Quem Somos</a>
+                <a href="adote.html">Adoção</a>
+                <a href="formulario.html">Formulário</a>
+                <a href="index.html#doacoes">Ajuda</a>
+            </nav>
+            <a href="index.html#doacoes" class="buttonNav" id="buttonNav">DOAÇÕES</a>
         </div>
     </header>
+
+    <div class="faixaPrincipal"></div>
 
     <section class="textoAdote">
         <h1 class="tituloTextoAdote"> Conheça nossos animais</h1>
@@ -29,11 +33,11 @@
 
     <section class="divisaoAnimaisAdote">
         <a href="cachorros.html" class="blocoImagem">
-        <img src="imagens/cachorro.jpg" alt="Cachorro">
+        <img src="imagens/cachorro.jpg" alt="Cachorro" class="imagemAdote">
         <p>Cachorros</p>
         </a>
         <a href="gatos.html" class="blocoImagem">
-        <img src="imagens/gato.jpg" alt="Gato">
+        <img src="imagens/gato.jpg" alt="Gato" class="imagemAdote">
         <p>Gatos</p>
         </a>
     </section>
@@ -56,7 +60,7 @@
 
         <div class="divisaoRodape">
             <h5 class="titulosRodape">Onde Estamos</h5>
-            <nav class="redesSociaisRodape">
+            <nav class="redesSociaisRodape" aria-label="redesSociais">
                 <a href="" class="imagemRedeSocial"><img src="imagens/facebook.png" alt="Logo do Facebook"></a>
                 <a href="" class="imagemRedeSocial"><img src="imagens/instagram.png" alt="Logo do Instagram" imagemRedeSocial></a>
                 <a href="" class="imagemRedeSocial"><img src="imagens/twitter.png" alt="Logo do Twitter"></a>

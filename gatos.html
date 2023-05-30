@@ -8,71 +8,150 @@
     <link rel="stylesheet" href="style.css">
     <script src="extensao.js"></script>
     <link rel="stylesheet" href="reset.css">
+    <link rel="icon" href="imagens/pata.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="divisaoCabecalho">
-            <a href="index.html"><h1 class="tituloAdote">Adote Pet</h1></a>
-            <ul class="ancorasAdote">
-                <li><a href="index.html#quemSomos">Quem Somos</a></li>
-                <li><a href="adote.html">Adote</a></li>
-                <li><a href="formulario.html">Formulário</a></li>
-                <li><a href="#doacoes">Doações</a></li>
-            </ul>
+    <header class="cabecalho" id="cabecalho">
+        <div class="divisaoAncoras" id="divisaoAncoras">
+            <a href="index.html"><h1 id="titulo">Adote Pet</h1></a>
+            <nav class="ancoras" aria-label="navbar">
+                <a href="index.html#quemSomos">Quem Somos</a>
+                <a href="adote.html">Adoção</a>
+                <a href="formulario.html">Formulário</a>
+                <a href="index.html#doacoes">Ajuda</a>
+            </nav>
+            <a href="index.html#doacoes" class="buttonNav" id="buttonNav">DOAÇÕES</a>
         </div>
     </header>
 
-    <div class="mensagemPrincipal">
-        <p>Não compre, adote!</p>
-    </div>
-    <div class="divisaoTituloAnimais">
-        <p>Gatos</p>
-    </div>
+    <div class="faixaPrincipal"></div>
+    
+   
+    <section class="sessaoTituloApresentacaoAnimais">
+        <div class="divisaoTituloAnimais">
+            <p>Gatos</p>
+        </div>
+        <div class="divisaoApresentacao">
+            <p class="textoApresentacao">São animais da Adote Pet que estão preparados para adoção, conheça seu futuro companheiro.</p>
+        </div>    
+    </section>
+    
 
-    <section class="divisaoAnimais">
-        <div>
-            <img src="imagens/gato1.jpg" alt="gato">
+    <main class="divisaoAnimais">
+        <div class="animal">
+            <img src="imagens/gato1.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                <div class="texto">
+                    <p>Flor</p>
+                    <p>2 anos</p>
+                    <p>Fêmea</p>
+                </div>
+                <a href="formulario.html"class="botaoAnimal">Adotar</a>
+            </div>
         </div>
         
-        <div>
-            <img src="imagens/gato2.jpg" alt="gato">
+        <div class="animal" >
+            <img src="imagens/gato2.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                <div class="texto">
+                    <p>Amarelo</p>
+                    <p>3 anos</p>
+                    <p>Macho</p>
+                </div>
+                <a href="formulario.html" class="botaoAnimal">Adotar</a>
+            </div>
         </div>
 
-        <div>
-            <img src="imagens/gato3.jpg" alt="gato">
+        <div class="animal">
+            <img src="imagens/gato3.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                  <div class="texto">
+                        <p>Branquinha</p>
+                    <p>1 anos</p>
+                    <p>Fêmea</p>
+                </div>
+                <a href="formulario.html" class="botaoAnimal">Adotar</a>
+            </div>
         </div>
 
-        <div>
-            <img src="imagens/gato5.jpg" alt="gato">
+        <div class="animal">
+            <img src="imagens/gato5.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                <div class="texto">
+                    <p>Cookie</p>
+                    <p>5 anos</p>
+                    <p>Fêmea</p>
+                </div>
+                <a href="formulario.html" class="botaoAnimal">Adotar</a>
+            </div>
         </div>
 
-        <div>
-            <img src="imagens/gato4.jpg" alt="gato">
+        <div class="animal">
+            <img src="imagens/gato4.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                <div class="texto">
+                    <p>Hulk</p>
+                    <p>3 anos</p>
+                    <p>Macho</p>
+                </div>
+                <a href="formulario.html"class="botaoAnimal">Adotar</a>
+            </div>
         </div>
 
-        <div>
-            <img src="imagens/gato6.jpg" alt="gato">
+        <div class="animal">
+            <img src="imagens/gato6.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                <div class="texto">
+                    <p>Simba</p>
+                    <p>4 anos</p>
+                    <p>Macho</p>
+                </div>
+                <a href="formulario.html"class="botaoAnimal">Adotar</a>
+            </div>
         </div>
 
-        <div>
-            <img src="imagens/gato7.jpg" alt="gato">
+        <div class="animal">
+            <img src="imagens/gato7.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                <div class="texto">
+                    <p>Guerreiro</p>
+                    <p>8 anos</p>
+                    <p>Macho</p>
+                </div>
+                <a href="formulario.html"class="botaoAnimal">Adotar</a>
+            </div>
         </div>
 
-        <div>
-            <img src="imagens/gato8.jpg" alt="gato">
+        <div class="animal">
+            <img src="imagens/gato8.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                <div class="texto">
+                    <p>Cocada</p>
+                    <p>1 anos</p>
+                    <p>Fêmea</p>
+                </div>
+                <a href="formulario.html"class="botaoAnimal">Adotar</a>
+            </div>
         </div>
 
-        <div>
-            <img src="imagens/gato9.jpg" alt="gato">
+        <div class="animal">
+            <img src="imagens/gato9.jpg" alt="gato" class="imagemAnimal">
+            <div class="divisaoTextoEbotao">
+                <div class="texto">
+                    <p>Sol</p>
+                    <p>3 anos</p>
+                    <p>Fêmea</p>
+                </div>
+                <a href="formulario.html"class="botaoAnimal">Adotar</a>
+            </div>
         </div>
-    </section>
+    </main>
 
-    <nav class="botaoOutrosAnimais">
+    <nav class="divisaoBotaoOutrosAnimais"aria-label="botao">
         <a href="adote.html">
-            <button>Conheça outros animais</button>
+            <button class="botaoOutrosAnimais">Conheça outros animais</button>
         </a>
     </nav>
-
 
     <footer>
         <section class="conteiner">
@@ -91,7 +170,7 @@
 
         <div class="divisaoRodape">
             <h5 class="titulosRodape">Onde Estamos</h5>
-            <nav class="redesSociaisRodape">
+            <nav class="redesSociaisRodape" aria-label="redesSociais">
                 <a href="" class="imagemRedeSocial"><img src="imagens/facebook.png" alt="Logo do Facebook"></a>
                 <a href="" class="imagemRedeSocial"><img src="imagens/instagram.png" alt="Logo do Instagram" imagemRedeSocial></a>
                 <a href="" class="imagemRedeSocial"><img src="imagens/twitter.png" alt="Logo do Twitter"></a>

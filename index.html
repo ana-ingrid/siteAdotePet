@@ -1,142 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon" />
     <title>Adote Pet</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="imagens/pata.png" type="image/x-icon" />
     <script src="extensao.js"></script>
-    <link rel="stylesheet" href="reset.css">
-</head>
+    <link rel="stylesheet" href="reset.css" />
+  </head>
 
-<body>
+  <body>
     <header class="cabecalho" id="cabecalho">
-        <img src="imagens/principal.jpg" alt="imagem de um cachorro e um gato" class="imgCabecalho">
-            
-       <div class="divisaoAncoras" id="divisaoAncoras">
-            <h1 id="titulo">Adote Pet</h1>
-            <ul class="ancoras">
-                <li><a href="#quemSomos">Quem Somos</a></li>
-                <li><a href="adote.html">Adote</a></li>
-                <li><a href="formulario.html">Formulário</a></li>
-                <li><a href="#doacoes">Doações</a></li>
-            </ul>
-        </div>
+      <div class="divisaoAncoras" id="divisaoAncoras">
+        <a href="index.html"><h1 id="titulo">Adote Pet</h1></a>
+        <nav class="ancoras" aria-label="navbar">
+          <a href="#quemSomos">Quem Somos</a>
+          <a href="adote.html">Adoção</a>
+          <a href="formulario.html">Formulário</a>
+          <a href="#doacoes">Ajuda</a>
+        </nav>
+        <a href="#doacoes" class="buttonNav" id="buttonNav">DOAÇÕES</a>
+      </div>
+      <img
+        src="imagens/principal3.png"
+        alt="imagem de um cachorro e um gato"
+        class="imgCabecalho"
+      />
     </header>
 
-    <section class="divisaoFaixa">
-        <div class="faixaRosa">
-            <p>Os animais precisam de você</p>
+    <section class="secaoServicos">
+      <h1 class="tituloSecaoServicos">Nossos serviços</h1>
+      <p class="fraseServicos">
+        Na Adote Pet o trabalho é voltado para os bichinhos. São ações de
+        resgate de situação de maus tratos, controle de natalidade, retirada de
+        rua e muitas outras medidas dedicadas aos pets que já sofreram tanto até
+        estarem preparados para a adoção
+      </p>
+
+      <section class="divisaoServicos">
+        <div class="servicos">
+          <img src="imagens/cuidados.jpg" alt="" />
+          <h1 class="servicoTitulo">Cuidados aos animais</h1>
         </div>
+
+        <div class="servicos">
+          <img src="imagens/resgates.jpg" alt="" />
+          <h1 class="servicoTitulo">Resgates</h1>
+        </div>
+
+        <div class="servicos">
+          <img src="imagens/reabilitacao.jpg" alt="" />
+          <h1 class="servicoTitulo">Reabilitação</h1>
+        </div>
+      </section>
     </section>
-
-    <div class="divBotoes">
-        <a href="adote.html">
-        <button class="botao" id="botaoAdocao">
-            <p class="tituloBotao">ADOTE UM PELUDO</p>
-            <p class="textoBotao">Escolha seu peludo aqui</p>
-        </button>
-        </a>
-
-        <a href="#doacoes">
-        <button class="botao" id="botaoDoacao">
-            <p class="tituloBotao">DOAR AGORA</p>
-            <p class="textoBotao">Doe qualquer quantia</p>
-        </button>
-        </a>
-    </div>
-
-
-    <div class="div">
-    <nav class="caixaAzul">
-        <p id="tituloCaixa">Quero adotar, como faço?</p>
-        <p class="textoCaixa">Ao decidir por adotar, você estará salvando duas vidas, a do animalzinho
-         que irá adotar e a do próximo resgatado. Pois quando liberamos um espaço,
-         abrimos uma vaga para que outro animal possa ser resgatado e salvo.
-         Para adotar é importante que preencha o nosso formulário de adoção
-         com atenção e precisão, todos os dados serão avaliados.
-        </p>
-        <a href="formulario.html"><button id="botaoCaixa">Formulário</button></a>
-    </nav>
-    <img src="imagens/puloGatos.jpg" alt="gatos em um jardim" class="imgGatos">
-    </div>
 
     <section id="doacoes">
-    <div class="textosETitulos">
+      <div class="textosETitulos">
         <h2 class="tituloSessoes">Doações</h2>
         <h1 id="subtituloDoacoes">Formas de Ajudar</h1>
-        
-        <div class="textoDoacoes">
-            <p class="ParagrafosDoacoes"> Tudo que realizamos só é possível com a ajuda de vocês. 
-                Para continuar dando todo cuidado e dignidade que os animais de rua
-                precisam,  criamos várias formas de ajuda.
-            </p>
 
-            <p class="ParagrafosDoacoes">
-                Contamos com seu apoio, basta clicar na opção que é mais interessante,
-                e  nos ajudar a dar continuidade a esse projeto lindo.
-            </p>
+        <div>
+          <p class="textoDoacoes">
+            Tudo que realizamos só é possível com a ajuda de vocês e dos nossos
+            voluntários. dando todo cuidado e dignidade que os animais de rua
+            precisam e merecem, criamos algumas formas de ajuda, como doações de
+            alimentos e materiais e também por contribuições financeiras.
+          </p>
 
-            <p class="ParagrafosDoacoes" id="textoCentralizado">
-                Os animais de rua precisam de cada um de nós numa corrente do bem.
-            </p>
+          <p class="textoDoacoes">
+            Contamos com seu apoio, basta clicar na opção que é possível para
+            você, nos ajude a dar continuidade a esse projeto lindo.
+          </p>
+
+          <p class="textoDoacoes" id="textoCentralizado">
+            Os animais de rua precisam de cada um de nós numa corrente do bem.
+          </p>
         </div>
 
-        <button class="botaoDoacao">Transferência ou Pix</button>
-        <button class="botaoDoacao">Doação de materiais</button>
-    </div>
+        <button id="botaoTransferencias" class="botaoDoacao">
+          Transferência ou Pix
+        </button>
+        <button id="botaoMaterias" class="botaoDoacao">
+          Doação de materiais
+        </button>
+
+        <div id="primeiroPopup" class="popup">
+            <div class="textoPopup">
+                <h2 class="tituloPopup">Transferência ou Pix</h2>
+                
+                <div class="divisaoTrasferenciasBanco">
+                    <div class="imagensLogoBanco">
+                    <img src="imagens/itau.png" alt="logo banco Itaú">
+                    <img src="imagens/bradesco.png" alt="logo banco bradesco">
+                    </div>
+                    <div class="textoTransferencias">
+                        <p class="tituloTransferenciasBanco">
+                            Doações via conta corrente Adote Pet organização sem fins
+                            lucrativos
+                        </p>
+                        <p>CNPJ 74.566.035/0001-29</p>
+                        <p> Banco Itaú(341) AG. 0738 C/C 01212-9</p>
+                        <p>Banco Bradesco AG. 0837-0 C/C 69647-1</p>
+                    </div>
+                </div>
+
+                <div class="divisaoTrasferenciasPix">
+                <img src="imagens/pix.png" alt="pix" />
+                    <div class="textoTransferencias">
+                        <p class="tituloPix">Chave pix</p>
+                        <p>pix@adotepet.org.br / 00.002.003/0004-22</p>
+                    </div>
+                </div>
+
+                <button id="fecharPopupTrasferencia" class="botaoPopup">Fechar</button>
+            </div>
+        </div>
+
+        <div id="segundoPopup" class="popup">
+          <div class="textoPopup">
+            <h2 class="tituloPopup">Doação de materiais</h2>
+            <div class="divisaoDoacaoMateriais ">
+            <p class="tituloDoacaoMaterias">Quer ajudar, mas não sabe o que os animais da Adote Pet precisam? </p>
+            <p class="textoDoacaoMateriais">As entregas devem ser feitas na sede da Adote Pet.</p>
+            <p><strong class="enderecoNegrito">Endereço</strong> Rio de Janeiro - Catumbi, rua do Chichorro S/N</p>
+            </div>
+            <img src="imagens/doacoes.jpg" alt="" class="imagemDoacaoMateriais">
+            <button id="fecharPopupMateriais" class="botaoPopup">Fechar</button>
+          </div>
+        </div>
+
+        <script>
+          var botaoTransferencias = document.getElementById("botaoTransferencias");
+          var primeiroPopup = document.getElementById("primeiroPopup");
+
+          var botaoMaterias = document.getElementById("botaoMaterias");
+          var segundoPopup = document.getElementById("segundoPopup");
+
+          var fecharPopupTrasferencia = document.getElementById(
+            "fecharPopupTrasferencia"
+          );
+          var fecharPopupMateriais = document.getElementById(
+            "fecharPopupMateriais"
+          );
+
+          botaoTransferencias.addEventListener("click", function () {
+            primeiroPopup.style.display = "block";
+          });
+
+          botaoMaterias.addEventListener("click", function () {
+            segundoPopup.style.display = "block";
+          });
+
+          fecharPopupTrasferencia.addEventListener("click", function () {
+            primeiroPopup.style.display = "none";
+          });
+
+          fecharPopupMateriais.addEventListener("click", function () {
+            segundoPopup.style.display = "none";
+          });
+        </script>
+      </div>
     </section>
 
-    <section id="quemSomos">
-        <div class="textosQs">
-            <h2 class="tituloSessoes">Quem Somos</h2>
-            <h1 id="subtituloQs">Adote Pet</h1>
-            <p>Adote Pet é uma organização sem fins lucrativos, localizada no Rio de Janeiro,
-                criada há 10 anos,  para resgatar, proteger, tratar e cuidar dos animais de 
-                rua até que eles consigam uma família. Atualmente temos mais de 50 animais, 
-                entre eles, cães, gatos. Vários animais já tiveram seus finais felizes, venha
-                fazer parte dessa história.
-            </p>
-            <p class="textoCentralizado">Os animais de rua precisam de cada um de nós numa corrente do bem.</p>
-        </div>
-        <img src="imagens/cachorros.jpg" alt="Cachorros na rua" class="imagemQs">
-        
+    <div class="faixa">
+      <p>Os animais precisam de você</p>
+    </div>
+
+    <section id="quemSomos" class="quemSomos">
+      <div class="textosQs">
+        <h2 class="tituloSessoes">Quem Somos</h2>
+        <h1 id="subtituloQs">Adote Pet</h1>
+        <p>
+          Adote Pet é uma organização sem fins lucrativos, localizada no Rio de
+          Janeiro, criada há 10 anos, para resgatar, proteger, tratar e cuidar
+          dos animais de rua até que eles consigam uma família. Atualmente temos
+          mais de 50 animais, entre eles, cães, gatos. Vários animais já tiveram
+          seus finais felizes, venha fazer parte dessa história.
+        </p>
+        <p class="textoCentralizado">
+          Os animais de rua precisam de cada um de nós numa corrente do bem.
+        </p>
+      </div>
+      <img
+        src="imagens/cachorros.jpg"
+        alt="Cachorros na rua"
+        class="imagemQs"
+      />
     </section>
 
     <footer>
-        <section class="conteiner">
+      <section class="conteiner">
         <div class="caixaRodape">
-            <h5 id="tituloCaixaRodape">Como podemos ajudar você?</h5>
-            <p>Conheça mais sobre nossa empresa, políticas e tenha o melhor atendimento. </p>
+          <h5 id="tituloCaixaRodape">Como podemos ajudar você?</h5>
+          <p>
+            Conheça mais sobre nossa empresa, políticas e tenha o melhor
+            atendimento.
+          </p>
         </div>
 
         <div class="divisaoRodape">
-            <h5 class="titulosRodape">Atendimento</h5>
-            <h6 class="subTitulosRodape">Telefone</h6>
-            <p>0800 000 00</p>
-            <h6 class="subTitulosRodape">E-mail</h6>
-            <p>adotepet@gmal.com</p>
+          <h5 class="titulosRodape">Atendimento</h5>
+          <h6 class="subTitulosRodape">Telefone</h6>
+          <p>0800 000 00</p>
+          <h6 class="subTitulosRodape">E-mail</h6>
+          <p>adotepet@gmal.com</p>
         </div>
 
         <div class="divisaoRodape">
-            <h5 class="titulosRodape">Onde Estamos</h5>
-            <nav class="redesSociaisRodape">
-                <a href="" class="imagemRedeSocial"><img src="imagens/facebook.png" alt="Logo do Facebook"></a>
-                <a href="" class="imagemRedeSocial"><img src="imagens/instagram.png" alt="Logo do Instagram" imagemRedeSocial></a>
-                <a href="" class="imagemRedeSocial"><img src="imagens/twitter.png" alt="Logo do Twitter"></a>
-            </nav>
-            <h6 class="subTitulosRodape">Endereço</h6>
-            <p>Rio de Janeiro - Catumbi</p>
+          <h5 class="titulosRodape">Onde Estamos</h5>
+          <nav class="redesSociaisRodape" aria-label="redesSociais">
+            <a href="" class="imagemRedeSocial"
+              ><img src="imagens/facebook.png" alt="Logo do Facebook"
+            /></a>
+            <a href="" class="imagemRedeSocial"
+              ><img
+                src="imagens/instagram.png"
+                alt="Logo do Instagram"
+                imagemRedeSocial
+            /></a>
+            <a href="" class="imagemRedeSocial"
+              ><img src="imagens/twitter.png" alt="Logo do Twitter"
+            /></a>
+          </nav>
+          <h6 class="subTitulosRodape">Endereço</h6>
+          <p>Rio de Janeiro - Catumbi</p>
         </div>
-        </section>
-        <div class="divisaoImagemRodape">
-            <p class="mensagemRodape">© 2023 Copyrirght - Adote Pet</p>
-        </div>
+      </section>
+      <div class="divisaoImagemRodape">
+        <p class="mensagemRodape">© 2023 Copyrirght - Adote Pet</p>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

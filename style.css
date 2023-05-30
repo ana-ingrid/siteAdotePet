@@ -1,709 +1,961 @@
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Cabeçalho*/
 .imgCabecalho {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  height: 700px;
 }
-
-.cabecalho {
-    position: relative;
-    height: 677px;
-}
-
 
 .divisaoAncoras {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100px;
-    top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #30342b;
+  background-image: url(imagens/nav.jpg);
+  width: 100%;
+  height: 80px;
 }
 
 .ancoras {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 120px;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  gap: 30px;
+  list-style: none;
 }
 
-.ancoras li {
-    display: inline;
-    color: aliceblue;
-    padding: 40px;
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
+.ancoras a {
+  color: #ffffff;
+  font-weight: 550;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
+.ancoras a:hover {
+  transform: scale(1.1);
+}
+
+.buttonNav {
+  background: #ad1219;
+  width: 250px;
+  color: #ffffff;
+  font-weight: 550;
+  height: 80px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonNav:hover {
+  background: #ee1d27;
+  transition: background 1s;
+}
 
 #titulo {
-    position: absolute;
-    top: 0;
-    left: 70px;
-    list-style: none;
-    padding: 20px;
-    color: aliceblue;
-    font-size: 50px;    
-    font-weight: 550;
-    font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 550;
+  padding-left: 60px;
+  font-family: "Roboto", sans-serif;
 }
 
-/* botão de doação e de adoção*/
-.divBotoes {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px 0px 100px 0px;
-    position: relative;
-    background: #FFFFFF;
+/* DivisaoServicos */
+
+.tituloSecaoServicos {
+  font-size: 32px;
+  color: #000000;
+  font-weight: 550;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 10px;
 }
 
-.botao {
-  width: 370px;
-  height: 100px;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
+.fraseServicos {
+  font-size: 20px;
+  color: #abadaa;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50px;
+  width: 600px;
+  padding-bottom: 20px;
 }
 
-.tituloBotao {
-    font-weight: 500;
-    padding-bottom: 6px;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+.secaoServicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 600px;
 }
 
-.textoBotao {
-    font-size: 12px;
-    color: #f5eded;
-    font-family: 'Roboto', sans-serif;
+.servicos:hover {
+  transform: scale(1.1);
 }
 
-#botaoDoacao {
-    background: #BD1F1F;
+.divisaoServicos {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
-#botaoAdocao {
-    background: #30342B;
+.servicos {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Faixa rosa com texto*/
-.faixaRosa {
-    background: #67b3b9;
-    height: 120px;
-    width: 100%;
-    position: relative;
+.servicoTitulo {
+  background: #173180;
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
 
-.faixaRosa p {
-    text-align: center;
-    font-size: 46px;
-    color: #FFFFFF;
-    padding: 36px;
-    font-family: 'Roboto', sans-serif;
+.servicos img {
+  width: 350px;
+  height: 300px;
 }
 
-/* Caixa de texto azul*/
-.div {
-    display: flex;
-    padding-bottom: 100px;
-    background: #FFFFFF;
-    position: relative;
+/* Faixa  com texto*/
+
+.faixa {
+  background: #173180;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px;
 }
 
-.caixaAzul {
-    position: relative;
-    background: #3573AE;
-    width: 700px;
-    height: 330px;
-} 
-
-#tituloCaixa {
-    font-size: 30px;
-    color: #FFFFFF;
-    padding: 40px 20px 0px 20px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+.faixa p {
+  text-align: center;
+  font-size: 38px;
+  color: #ffffff;
+  padding: 36px;
+  font-family: "Roboto", sans-serif;
 }
-
-.textoCaixa {
-    color: #A7C0CF;
-    font-size: 19px;
-    line-height: 1.2    ;
-    padding: 40px 15px 30px 15px;
-    text-align: center;
-    text-indent: 25px;
-    width: 650px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-#botaoCaixa {
-    position: absolute;
-    right: 270px;
-    color: #FFFFFF;
-    background: #30342B;
-    width: 160px;
-    height: 40px;
-    border-radius: 40px;
-    font-size: 20px;
-    cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* Imagens do lado da caixa de texto azul*/
-.imgGatos {
-    width: 800px;
-    height: 330px;
-    position: relative;
-}
-
 
 /* Sessão de doação */
 #doacoes {
-    background: #ece0e0;
-    height: 700px;
-    width: 100%;
-    position: relative;
-    padding-bottom: 50px;
-}
-
-.textosETitulos {
-    padding: 50px 80px 50px 100px;
-    position: absolute;
-    right: 150px;
+  background: #ece0e0;
+  height: 750px;
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: surgimento 3s ease-in-out;
 }
 
 /* Titulo das H2 das sessoes da página principal */
 .tituloSessoes {
-    font-size: 28px;
-    font-weight: 800;
-    padding: 20px;
-    color: #000000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 20px;
+  color: #000000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #subtituloDoacoes {
-    font-size: 46px;
-    color: #BD1F1F;
-    font-weight: 600;
-    padding: 0px 20px 30px 20px;
+  font-size: 42px;
+  color: #bd1f1f;
+  font-weight: 600;
+  padding: 0px 20px 30px 20px;
 }
 
 .textoDoacoes {
-    width: 900px;
-    font-size: 23px;
-    padding: 20px 20px 50px 20px;
-    font-family: 'Quicksand', sans-serif;
+  width: 900px;
+  font-size: 20px;
+  padding: 20px 20px 30px 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #30342b;
 }
-
-.ParagrafosDoacoes {
-    line-height: 1.5;
-    padding: 20px 0px;
-}
-
 
 #textoCentralizado {
-    text-align: center;
+  text-align: center;
 }
 
 .botaoDoacao {
-    background-color: #BD1F1F;
-    color: #FFFFFF;
-    border-radius: 40px;
-    font-size: 20px;
-    width: 350px;
-    height: 60px;
-    margin: 0px 50px 0px 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
-    cursor: pointer;
+  background: #bd1f1f;
+  color: #ffffff;
+  border-radius: 40px;
+  font-size: 20px;
+  width: 350px;
+  height: 60px;
+  margin: 40px 50px 0px 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
 }
 
+.botaoDoacao:hover {
+  border: #ad1219;
+  color: #ad1219;
+  background: #f1b8b8;
+}
+
+/* Popup e seus textos */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 630px;
+  height: 550px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.textoPopup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.tituloPopup {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    font-weight: 800;
+}
+
+.tituloTransferenciasBanco {
+    color: #bd1f1f;
+    font-weight: 550;
+    font-size: 17px;
+}
+
+.divisaoTrasferenciasBanco {
+    background: #ece0e0;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.imagensLogoBanco {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.divisaoTrasferenciasPix {
+    display: flex;
+    background: #ece0e0;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tituloPix {
+    color: #bd1f1f;
+    font-weight: 550;
+    font-size: 20px;
+
+}
+
+.textoTransferencias {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.divisaoDoacaoMateriais {
+    display: flex;
+    flex-direction: column;
+    background: #ece0e0;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.tituloDoacaoMaterias {
+    text-align: center;
+    font-size: 18px;
+    color: #bd1f1f;
+    font-weight: 550;
+}
+
+.textoDoacaoMateriais {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.enderecoNegrito {
+    color: #ad1219;
+}
+
+.listaDosMateriais {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: "Roboto", sans-serif; 
+}
+
+
+
+.botaoPopup {
+    height: 30px;
+    background: #bd1f1f;
+    color: #ffffff;
+    width: 200px;
+    border-radius: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 /* Quem somos */
 #quemSomos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 100px;
-    background: #FFFFFF;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  background: #ffffff;
+  width: 100%;
+  height: 600px;
+  animation: surgimento 3s ease-in-out;
+}
+
+@keyframes surgimento {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .textosQs {
-    color: #A0A0A0;
-    width: 500px;
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 50px;
-    padding-left: 50px;
-    padding-right: 20px;
-    display: inline-block;
+  color: #a0a0a0;
+  width: 280px;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-right: 20px;
+  padding-left: 50px;
 }
 
 .imagemQs {
-    border-radius: 200px;
-    height: 420px;
-    width: 600px;
-    margin: 0px 30px;
+  border-radius: 200px;
+  height: 420px;
+  width: 600px;
+  padding-right: 20px;
 }
 
 #subtituloQs {
-    color: #27668A;
-    font-size: 56px;
-    font-weight: 600;
-    margin: 0 0 0 15px;
+  color: #263e87;
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0 0 0 15px;
 }
 
 .textosQs p {
-    padding: 20px;
-    width: 550px;
-    font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  width: 550px;
+  font-family: "Quicksand", sans-serif;
 }
 
 .textoCentralizado {
-    text-align: center;
+  text-align: center;
 }
 
 /* Rodapé */
 footer {
-    height: 380px;
-    background: #bae0ab;
-    width: 100%;
-    position: relative; 
+  height: 380px;
+  background: #ecf3e9;
+  width: 100%;
+  position: relative;
 }
 
 .conteiner {
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
-    
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
 }
 
-/* Caixa verde do rodapé */
+/* Caixa azul do rodapé */
 .caixaRodape {
-    background: #255024;
-    height: 140px;
-    width: 320px;
-    border-radius: 15px;
-    position: relative;
-    margin: 100px;
-    cursor: pointer;
+  background: #231b92;
+  height: 140px;
+  width: 320px;
+  border-radius: 15px;
+  position: relative;
+  margin: 100px;
+  cursor: pointer;
+}
+
+.caixaRodape:hover {
+  transform: scale();
+  transition: 2s;
 }
 
 #tituloCaixaRodape {
-    font-size: 17px;
-    color: #FFFFFF;
-    font-weight: 550;
-    position: absolute;
-    top: 10px;
-    left: 40px;
-    padding: 20px 0px 20px 0px;  
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 550;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
 
-
 .caixaRodape p {
-    color: #F5F5F5;
-    font-size: 14px;
-    width: 225px;
-    position: absolute;
-    top: 50px;
-    left: 40px;
-    padding: 20px 0px 20px 0px;
-    text-align: center;
-    line-height: 18px;
-    font-family: 'Quicksand', sans-serif;
+  color: #f5f5f5;
+  font-size: 14px;
+  width: 225px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  line-height: 18px;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* dividindo os blocos do rodapé em coluna */
 .divisaoRodape {
-    display: flex;
-    flex-direction: column;
-    margin: 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 80px;
 }
 
 .titulosRodape {
-    color: #000000;
-    font-size: 21px;
-    font-weight: 550;
-    padding: 10px 0px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 550;
+  padding: 10px 0px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .subTitulosRodape {
-    color: #BD1F1F;
-    font-size: 18px;
-    /* font-weight: 550; */
-    padding: 15px 0px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #bd1f1f;
+  font-size: 16px;
+  padding: 15px 0px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .divisaoRodape p {
-    text-align: center;
-    font-size: 17px;
-    font-family: 'Quicksand', sans-serif;
-
+  text-align: center;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
 }
 
-.redesSociaisRodape a {
-    display: inline-block;
-    padding: 10px;
+.redesSociaisRodape {
+  display: inline-block;
+  padding: 10px;
 }
 
 .imagemRedeSocial {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .imagemRodape {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .divisaoImagemRodape {
-    background-image: url(imagens/rodape.jpg);
-    height: 40px;
-    position: relative;
+  background-image: url(imagens/nav.jpg);
+  height: 40px;
+  position: relative;
 }
+
 .mensagemRodape {
-    position: absolute;
-    bottom: 10px;
-    right: 600px;
-    color: #ece0e0;
-    font-family: 'Quicksand', sans-serif;
-}
-
-/* Seta para voltar ao topo */
-#seta {
-    position: fixed;
-}
-
-/* Página Adote */
-.divisaoCabecalho {
-    background-image: url(imagens/nav.jpg);
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.tituloAdote {
-    padding: 30px;
-    color: aliceblue;
-    font-size: 50px;    
-    font-weight: 550;
-    font-family: 'Roboto', sans-serif;
-}
-
-.ancorasAdote {
-    display: flex;
-}
-
-.ancorasAdote li {
-    color: aliceblue;
-    padding: 40px;
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 10px;
+  right: 600px;
+  color: #ece0e0;
+  font-family: "Quicksand", sans-serif;
 }
 
 .textoAdote {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 280px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 280px;
+  align-items: center;
 }
 
 .tituloTextoAdote {
-    font-size: 46px;
-    padding-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 550;
+  font-size: 46px;
+  padding-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 550;
 }
 
 .textoAdote p {
-    font-size: 20px;
-    width: 500px;
-    line-height: 1.5;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  width: 500px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
 
 .divisaoAnimaisAdote {
-    display: flex;
-    height: 400px;
-    justify-content: center;
-    padding-bottom: 100px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  padding-bottom: 20px;
+  gap: 60px;
 }
 
-.divisaoAnimaisAdote img {
-    padding: 0px 20px;
+.imagemAdote {
+  width: 430px;
+  height: 340px;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.imagemAdote:hover {
+  transform: scale(1.1);
 }
 
 .blocoImagem {
-    position: relative;
+  position: relative;
 }
 
 .blocoImagem p {
-    position: absolute;
-    top: 230px;
-    right: 200px;
-    font-size: 40px;
-    color: #FFFFFF;
-    font-weight: 550;
+  position: absolute;
+  top: 230px;
+  right: 200px;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 550;
 }
+
 /* Página dos Animais gatos/cachorros */
-.mensagemPrincipal {
-    font-size: 32px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
+.faixaPrincipal {
+  font-size: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: #231b92;
+  font-family: "Poppins", sans-serif;
+}
+
+.sessaoTituloApresentacaoAnimais {
+    display: flex; 
+    flex-direction: column;
     align-items: center;
-    color: #FFFFFF;
-    background: #27668A;
-    font-family: 'Quicksand', sans-serif;
+    justify-content: space-between;
+}
+
+.divisaoApresentacao {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    width: 40%;
+    text-align: center;
 }
 
 .divisaoTituloAnimais {
-    width: 380px;
-    height: 60px;
-    background: #30342B;
-    font-size: 36px;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 550;
-    margin: 20px 0px;
-    font-family: 'Quicksand', sans-serif;
+  width: 360px;
+  height: 60px;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 550;
+  margin: 50px 0px 30px 0px;
+  font-family: "Quicksand", sans-serif;
+  background: #1d1e1f;
+  color: #ffffff;
+  border: #181717 2px solid;
+
+}
+
+.textoApresentacao {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .divisaoAnimais {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 60px ;
 }
 
-.divisaoAnimais div {
-    padding: 20px;
+.imagemAnimal {
+  height: 300px;
+  width: 340px;
 }
 
-.divisaoAnimais div img {
-    height: 320px;
-    width: 350px;
+.divisaoBotaoOutrosAnimais {
+  text-align: center;
+  padding: 60px;
 }
 
 .botaoOutrosAnimais {
-    text-align: center;
-    padding: 60px;
+  color: #ffffff;
+  background: #30342b;
+  font-size: 20px;
+  width: 330px;
+  height: 60px;
+  border-radius: 30px;
+  font-weight: 550;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 
-.botaoOutrosAnimais a button{
-    color: #FFFFFF;
-    background: #30342B;
-    font-size: 24px;
-    width: 350px;
-    height: 70px;
-    border-radius: 30px;
-    font-weight: 550;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
+.botaoOutrosAnimais:hover {
+  color: #1d1e1f;
+  border: 2px solid #30342b;
+  background: #ffffff;
 }
 
 /* formulário */
 .divisaoFormulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
 }
 
 .textoFormulario {
-    width: 730px;
-    font-size: 18px;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px;
+  width: 730px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
 }
 
-.termoFormulario {
-    color: #4CAF50;
+.strongTexto {
+  color: #4caf50;
 }
 
 .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
 }
 
 .formularioPrimeiraDivisao {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
 .formularioPrimeiraDivisao label {
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 0px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0px;
 }
 
 .formularioPrimeiraDivisao input {
-    height: 30px;
-    width: 700px;
+  height: 30px;
+  width: 700px;
 }
 
 .formularioSegundaDivisao {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0px;
-    padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+  padding-bottom: 80px;
 }
 
-.formularioSegundaDivisao div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 700px;
+.divisaoSegundaDivisao {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 700px;
 }
 
-.formularioSegundaDivisao div label {
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 50px;
+.divisaoSegundaDivisao label {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 52px;
 }
 
-.formularioSegundaDivisao div input {
-    margin:0px 30px;
+.divisaoSegundaDivisao input {
+  margin: 0px 30px;
 }
 
 .CaixaArquivo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: #255024 2px solid;
-    width: 700px;
-    height: 200px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #231b92 2px solid;
+  width: 700px;
+  height: 200px;
+  padding: 20px;
 }
 
 #ddd {
-    width: 80px;
-    height: 30px;
+  width: 80px;
+  height: 30px;
 }
 
 #telefone {
-    width: 250px;
-    height: 30px;
+  width: 250px;
+  height: 30px;
 }
 
 #nascimento {
-    width: 250px;
-    height: 30px;
+  width: 260px;
+  height: 32px;
+  font-family: "Poppins", sans-serif;
+  text-align: center    ;
 }
 
 .ParagrafoCaixaArquivo {
-    font-size: 18px;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-    padding: 5px;
-    color: #7a7171;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  color: #7a7171;
 }
 
 .botaoCaixaArquivo {
-    position: relative;
-    padding: 15px;
+  position: relative;
+  padding: 20px;
 }
 
 #arquivo {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 
 .botaoLabelCaixaArquivo {
-    font-size: 19px;
-    font-family: 'Poppins', sans-serif;
-    color: #4CAF50;
-    border: #4CAF50 2px solid;
-    padding: 7px;
-    border-radius: 10px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #263e87;
+  border: #263e87 2px solid;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.botaoLabelCaixaArquivo:hover {
+  color: #ffffff;
+  border: #263e87 2px solid;
+  background: #263e87;
 }
 
 #labelCaixaArquivo {
-    font-size: 19px;
-    font-family: 'Poppins', sans-serif;
-}
-
-labelCaixaArquivo::hover {
-    
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
 }
 
 .redesSociaisFormulario {
-    margin: 50px 0px;
+  margin: 50px 0px;
 }
 
 .redesSociaisFormulario div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 700px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
 }
 
-.redesSociaisLabels label{
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 90px;  
+.redesSociaisLabels label {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 90px;
 }
 
 .redesSociaisInputs input {
-    width: 300px;
-    height: 30px;
-    margin: 0px 30px;
+  width: 300px;
+  height: 30px;
+  margin: 0px 30px;
 }
 
 .endereco {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .labelEndereco {
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 0px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0px;
 }
 
 .inputEndereco {
-    width: 700px;
-    height: 30px;
+  width: 700px;
+  height: 30px;
 }
 
 .enderecoCidadeEUf {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+}
+
+.divisaoEnderecoCidadeEUfInput {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+}
+
+.divisaoEnderecoCidadeEUfLabel {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+}
+
+#ufLabel {
+  padding-right: 150px;
+}
+
+.divisaoEnderecoCidadeEUfInput input {
+  height: 30px;
+}
+
+#cidade {
+  padding: 0px 150px;
+}
+#uf {
+  padding: 0px 10px;
+}
+
+.divisaoEnderecoCidadeEUfLabel label {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0px;
+}
+
+.selectFormulario {
+  border: #7a7171 1px solid;
+  background: #263e87;
+  color: #ffffff;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.divisaoPerguntas {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelPerguntas {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 30px 0px;
+}
+
+.caixaDeTextoFormulario {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.caixaDeTextoFormulario textarea {
+  columns: 93;
+  resize: vertical;
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.botaoFormulario {
+  background: #4caf50;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  color: #ffffff;
+  border: #4caf50 2px solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(95, 93, 93, 0.1);
+}
+
+#reset {
+  background: #263e87;
+  border: #263e87 2px solid;
+  border-radius: 10px;
+  width: 100px;
+}
+
+/* pseudoElemento Hover */
+
+/* Pagina link dos animais cachorros/gatos */
+.animal {
+  position: relative;
+  display: inline-block;
+}
+
+.animal:hover .divisaoTextoEbotao {
+  opacity: 1;
+}
+
+.divisaoTextoEbotao {
+  position: absolute;
+  bottom: 5px;
+  height: 120px;
+  background-color: rgba(7, 7, 7, 0.5);
+  color: #ffffff;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.botaoAnimal {
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100px;
 }
